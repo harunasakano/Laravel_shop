@@ -2,11 +2,11 @@
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
         <link href="css/shopping.css" rel="stylesheet" type="text/css">
-        <title>KAGOYUME_EC</title>
+        <title>Larashop</title>
     </head>
     <body>
             <div class="container">
-                <h1>KAGOYUME_EC</h1>
+                <h1>LaraShop</h1>
                 <h3>カート一覧</h3>
                     <div class="cartList">
                         <table>
@@ -45,7 +45,7 @@
                         </table>
                     </div>
                  <div class="backtop">
-                    <a href={{ url('/') }}>かごゆめTOPに戻る</a>
+                    <a href={{ url('/') }}>TOPに戻る</a>
                  </div>
             </div>
     </body>

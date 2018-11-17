@@ -2,11 +2,11 @@
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
         <link href="css/shopping.css" rel="stylesheet" type="text/css">
-        <title>KAGOYUME_EC</title>
+        <title>LaraShop</title>
     </head>
     <body>
         <div class="container">
-            <h1>KAGOYUME_EC</h1>
+            <h1>Larashop</h1>
                 @foreach ($hits as $hit)
                 <div class="itemDetail">
                     <h3>{{{ $hit->Name }}}</h3>

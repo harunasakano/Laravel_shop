@@ -1,12 +1,12 @@
 <html>
     <head>
-    <title>KAGOYUME TOP</title>
+    <title>LaraShop</title>
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
     <link href="css/shopping.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class="container">
-            <h1>KAGOYUME_EC</h1>
+            <h1>LaraShop</h1>
             @for ($i=0; $i<count($hits); $i++)
             <form method="get" name="formSearch{{ $i }}" action="{{ url('/item') }}">
                 <input type="hidden" value="{{{ $hits[$i]->Code }}}" name="itemCode">

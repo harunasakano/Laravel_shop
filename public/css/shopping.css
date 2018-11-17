@@ -1,19 +1,19 @@
 /*
 
-KAGOYUME CSS
+LaraShop CSS
 
 */
 
-.container 
-{  
-    width: 80%;  
-    margin: 0 auto;  
-    text-align: left;  
+.container
+{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .searchForm
 {
-    margin: 10px 0px 10px 0px; 
+    margin: 10px 0px 10px 0px;
 }
 
 .sortForm
@@ -24,6 +24,13 @@ KAGOYUME CSS
 .searchButton
 {
     margin: 10px 0px 10px 0px;
+}
+
+.error-info
+{
+    margin: 3px;
+    color: red;
+    font-size: 12px;
 }
 
 /*アイテム詳細画面*/
@@ -79,7 +86,7 @@ h5
     border-radius: 3px;
 }
 
-.buyBtn:active 
+.buyBtn:active
 {
     -ms-transform: translateY(4px);
     -webkit-transform: translateY(4px);
@@ -99,7 +106,7 @@ h5
     margin-bottom: 10px;
 }
 
-.countSelect p 
+.countSelect p
 {
     font-size: 20px;
 }
