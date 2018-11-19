@@ -97,13 +97,13 @@ LaraShop CSS
 
 .formTitle
 {
-  padding: .25em 0 .25em .75em;
-  border-left: 6px solid #ccc;
+  display: inline-block;
+  background: linear-gradient(transparent 60%, #F8BBD0 60%);
 }
 
 .search-button
 {
-  font-size: 1em;
+  font-size: 0.8em;
   margin: 20px 0 auto;
   display: inline-block;
   padding: 0.5em 1em;
