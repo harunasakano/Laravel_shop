@@ -6,24 +6,121 @@ LaraShop CSS
 
 .container
 {
-    width: 80%;
-    margin: 0 auto;
-    text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
 }
 
-.searchForm
+.categoryBox,.sortBox
 {
-    margin: 10px 0px 10px 0px;
+	overflow: hidden;
+	width: 40%;
+	margin: 20px 4% auto;
+	text-align: center;
 }
 
-.sortForm
+.categoryBox select,.sortBox select
 {
-    margin: 10px 0px 10px 0px;
+	width: 100%;
+	padding-right: 1em;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
 }
 
-.searchButton
+.categoryBox select::-ms-expand,.sortBox select::-ms-expand
 {
-    margin: 10px 0px 10px 0px;
+    display: none;
+}
+
+.categoryBox.cp_sl01,.sortBox.cp_sl01
+{
+	position: relative;
+	border: 1px solid #bbbbbb;
+	border-radius: 2px;
+	background: #ffffff;
+}
+
+.categoryBox.cp_sl01::before,.sortBox.cp_sl01::before
+{
+	position: absolute;
+	top: 0.8em;
+	right: 0.9em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #666666;
+	pointer-events: none;
+}
+
+.categoryBox.cp_sl01 select,.sortBox.cp_sl01 select
+{
+	padding: 8px 38px 8px 8px;
+	color: #666666;
+}
+
+.wordsBox
+{
+	position: relative;
+	width: 40%;
+	margin: 20px 4% auto;
+}
+
+.wordsBox input[type='text']
+{
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	border: 1px solid #bbbbbb;
+	border-radius: 4px;
+}
+
+.textef input[type='text']:focus
+{
+	border: 1px solid #da3c41;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}
+
+.formTitle
+{
+  padding: .25em 0 .25em .75em;
+  border-left: 6px solid #ccc;
+}
+
+.search-button
+{
+  font-size: 1em;
+  margin: 20px 0 auto;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #FFA500;
+  color: #FFF;
+  border-bottom: solid 4px #E5620B;
+  border-radius: 3px;
+}
+
+.search-button:active
+{
+  -ms-transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
 }
 
 .error-info
@@ -31,6 +128,11 @@ LaraShop CSS
     margin: 3px;
     color: red;
     font-size: 12px;
+}
+
+.requiredtext
+{
+    color: red;
 }
 
 /*アイテム詳細画面*/
