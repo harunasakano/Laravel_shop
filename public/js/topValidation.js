@@ -28,16 +28,15 @@ $(function(){
         }
       }
     };
-
+});
   //エラーあったらサブミットしない
-  $('form').on('submit',function()
-    {
-    let error = $(this).find('span.error-info').length;
-      if(error)
-        {
-         alert("入力エラーがあります");
-         return false;
-        }
-  });
+  $('#queryform').submit(function(){
+
+     //既にエラー文が表示されてる場合
+     let error = $(this).find('span.error-info').length;
+     if($('#query_word').val() === '' || (error)) {
+      alert('未入力の項目があります！');
+      return false;
+     }
 });
 });

@@ -2,7 +2,7 @@
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
         <link href="css/shopping.css" rel="stylesheet" type="text/css">
-        <title>Larashop</title>
+        <title>LaraShop</title>
     </head>
     <body>
             <div class="container">
@@ -15,12 +15,12 @@
                             <th>単価</th>
                             <th>個数</th>
                             <th>小計</th>
-                        　</tr>
+                        </tr>
                             @for ($i=0; $i<count($carts); $i++)
                             <form method="get" name="formCartEdit{{ $i }}" action="{{ url('/cart')}}">
                             <tr>
                               <td class="item_name">
-                               　<div class="name_item">
+                               <div class="name_item">
                                    <a href="{{ url('/item?itemCode='.$carts[$i]['itemCode']) }}">{{{ $carts[$i]['itemName'] }}}</a>
                                  </div>
                                  <div class="goods_img">

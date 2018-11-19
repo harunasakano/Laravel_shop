@@ -9,7 +9,7 @@
     <body>
         <div class="container">
             <h1>LaraShop</h1>
-            <form action="{{ url('/search') }}" method="GET">
+            <form name="queryform" action="{{ url('/search') }}" method="GET" id="queryform">
             <div class="searchForm">
                 キーワード検索：
                 <select name="category_id" id="category_id" required/>
@@ -27,10 +27,10 @@
               </select>
             </div>
             <div class="sortForm">
-            <input type="text" name="query_word" value="" id="query_word" required/>
+            <input class="search-box" type="text" name="query_word" value="" id="query_word" placeholder="キーワードを入力">
             </div>
             <div class="searchButton">
-                <input type="submit" value="Yahooショッピングで検索"/>
+                <button class="search-button" type="submit" id="button">Yahooショッピングで検索</button>
             </div>
             </form>
         </div>
