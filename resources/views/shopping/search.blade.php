@@ -6,7 +6,7 @@
     </head>
     <body>
         <div class="container">
-            <h1>LaraShop</h1>
+            <h1><span class="maintitle">LaraShop</span></h1>
             @for ($i=0; $i<count($hits); $i++)
             <form method="get" name="formSearch{{ $i }}" action="{{ url('/item') }}">
                 <input type="hidden" value="{{{ $hits[$i]->Code }}}" name="itemCode">

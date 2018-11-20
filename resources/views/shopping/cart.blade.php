@@ -6,7 +6,7 @@
     </head>
     <body>
             <div class="container">
-                <h1>LaraShop</h1>
+                <h1><span class="maintitle">LaraShop</span></h1>
                 <h3>カート一覧</h3>
                     <div class="cartList">
                         <table>

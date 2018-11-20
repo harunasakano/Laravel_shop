@@ -6,7 +6,7 @@
     </head>
     <body>
         <div class="container">
-            <h1>Larashop</h1>
+            <h1><span class="maintitle">LaraShop</span></h1>
                 @foreach ($hits as $hit)
                 <div class="itemDetail">
                     <h3>{{{ $hit->Name }}}</h3>
