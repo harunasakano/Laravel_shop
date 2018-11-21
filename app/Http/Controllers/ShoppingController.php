@@ -38,8 +38,11 @@ class ShoppingController extends Controller
 
         $hits = $utility_api->Get_query_result($queryWord,$sort,$category_id);
 
-
-        return view('shopping.search')->with("hits",$hits);
+        if(!empty($hits)){
+            return view('shopping.search')->with("hits",$hits);
+        }else{
+            return view('shopping.error');
+        }
     }
 
     public function item(Request $request)

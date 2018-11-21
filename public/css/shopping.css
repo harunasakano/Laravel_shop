@@ -138,14 +138,21 @@ font-size:72px;
 
 .error-info
 {
-    margin: 3px;
-    color: red;
-    font-size: 12px;
+  margin: 3px;
+  color: red;
+  font-size: 12px;
 }
 
 .requiredtext
 {
-    color: red;
+  color: red;
+}
+
+/*クエリエラー画面*/
+
+.errortext
+{
+  text-align: center;
 }
 
 /*アイテム詳細画面*/
