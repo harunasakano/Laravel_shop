@@ -18,11 +18,17 @@ h1
   font-size:72px;
 }
 
-.container
+.TopContainer
 {
   width: 80%;
   margin: 0 auto;
   text-align: center;
+}
+
+.container
+{
+  width: 80%;
+  margin: 0 auto;
 }
 
 .categoryBox,.sortBox

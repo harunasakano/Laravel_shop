@@ -7,7 +7,7 @@
         <title>LaraShop</title>
     </head>
     <body>
-        <div class="container">
+        <div class="TopContainer">
             <h1><span class="maintitle">LaraShop</span></h1>
             <form name="queryform" action="{{ url('/search') }}" method="GET" id="queryform">
             <p class="formTitle">カテゴリ</p>
