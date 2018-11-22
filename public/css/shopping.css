@@ -34,6 +34,7 @@ h1
 
 .categoryBox select,.sortBox select
 {
+  font: 15px/1em sans-serif;
 	width: 100%;
 	padding-right: 1em;
 	cursor: pointer;
@@ -57,7 +58,7 @@ h1
 {
 	position: relative;
 	border: 1px solid #bbbbbb;
-	border-radius: 2px;
+	border-radius: 4px;
 	background: #ffffff;
 }
 
@@ -91,7 +92,7 @@ h1
 
 .wordsBox input[type='text']
 {
-	font: 15px/24px sans-serif;
+	font: 15px/1em sans-serif;
 	box-sizing: border-box;
 	width: 100%;
 	padding: 0.3em;
@@ -128,7 +129,7 @@ h1
   background: #FFA500;
   color: #FFF;
   border-bottom: solid 4px #E5620B;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .search-button:active
