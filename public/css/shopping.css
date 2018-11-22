@@ -6,30 +6,30 @@ LaraShop CSS
 
 h1
 {
-font-family: 'Vidaloka', serif;
-text-align:center;
-font-weight:normal;
-color:#444;
+  font-family: 'Vidaloka', serif;
+  text-align:center;
+  font-weight:normal;
+  color:#444;
 }
 
-.maintitle{
-display:block;
-font-size:72px;
+.maintitle
+{
+  display:block;
+  font-size:72px;
 }
 
 .container
 {
   width: 80%;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
 }
 
 .categoryBox,.sortBox
 {
+  width: 40%;
+  margin: 0 auto;
 	overflow: hidden;
-	width: 40%;
-	margin: 20px 4% auto;
-	text-align: center;
 }
 
 .categoryBox select,.sortBox select
@@ -86,7 +86,7 @@ font-size:72px;
 {
 	position: relative;
 	width: 40%;
-	margin: 20px 4% auto;
+	margin: 0 auto;
 }
 
 .wordsBox input[type='text']
@@ -110,8 +110,12 @@ font-size:72px;
 
 .formTitle
 {
+  font-family:'Lucida Grande','Hiragino Kaku Gothic ProN',
+  Meiryo, sans-serif;
+  font-size: 1.1em;
+  margin-top: 30px;
   display: inline-block;
-  background: linear-gradient(transparent 60%, #F8BBD0 60%);
+  background: linear-gradient(transparent 60%, #F8BBD0 40%);
 }
 
 .search-button
