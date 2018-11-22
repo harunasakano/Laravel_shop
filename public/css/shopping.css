@@ -153,6 +153,12 @@ font-size:72px;
 .errortext
 {
   text-align: center;
+  margin: 3% auto;
+}
+
+.errorBacktop
+{
+  text-align: center;
 }
 
 /*アイテム詳細画面*/
