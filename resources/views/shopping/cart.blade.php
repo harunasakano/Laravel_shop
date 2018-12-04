@@ -47,7 +47,7 @@
                     
                     <a href="{{ url('/confirm') }}" class="buyBtn">レジに進む</a>
                  <div class="backtop">
-                    <a href={{ url('/') }}>TOPに戻る</a>
+                    <a href={{ url('/') }}>お買い物を続ける</a>
                  </div>
             </div>
     </body>
