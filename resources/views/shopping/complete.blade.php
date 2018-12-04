@@ -10,8 +10,11 @@
         <h1><span class="maintitle">LaraShop</span></h1>
             <h2>注文完了画面</h2>
             <div class="container">
-                <p>Thanks!</p>
-                <p>ご注文誠にありがとうございました!</p>
+              <div class="thanks-wrapper">
+                <p>Thanks！</p>
+                <p>ご注文誠にありがとうございました！</p>
+                <img src="../aisatsu_arigatou.png">
+              </div>
             </div>
     </body>
 </html>
