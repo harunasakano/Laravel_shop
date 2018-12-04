@@ -15,6 +15,9 @@
                 <p>ご注文誠にありがとうございました！</p>
                 <img src="../aisatsu_arigatou.png">
               </div>
+              <div class="backtop">
+                    <a href={{ url('/') }}>TOPに戻る</a>
+            　</div>
             </div>
     </body>
 </html>

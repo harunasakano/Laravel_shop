@@ -41,7 +41,7 @@
                                    <a href="{{ url('/item?itemCode='.$carts[$i]['itemCode']) }}">{{{ $carts[$i]['itemName'] }}}</a>
                                  </div>
                                  <div class="goods_img">
-                                   <img src="https://pics.prcm.jp/998ccf344e34a/75562369/jpeg/75562369_220x195.jpeg" alt="{{ $carts[$i]['itemName'] }}" class="goodsImage">
+                                   <img src="{{ $carts[$i]['itemImg'] }}" alt="{{ $carts[$i]['itemName'] }}" class="goodsImage">
                                  </div>
                               </td>
                               <td class="item_price">{{{ $carts[$i]['itemPrice'] }}}円</td>

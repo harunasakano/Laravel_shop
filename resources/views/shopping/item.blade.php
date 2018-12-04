@@ -38,8 +38,9 @@
                 </div>
                     @foreach ($hits as $hit)
                     <input type="hidden" name="itemCode" value={{{ $hit->Code }}}>
-                    <input type="hidden" name="itemName" value={{{ $hit->Name }}}>
+                    <input type="hidden" name="itemName" value={{{ preg_replace("/( |　)/", "", $hit->Name) }}}>
                     <input type="hidden" name="itemPrice" value={{{ $hit->Price }}}>
+                    <input type="hidden" name="itemImg" value={{{ $hit->Image->Small }}}>
                     <a href="javascript:formcart.submit()" class="buyBtn">カートに入れる</a>
                     @endforeach
             </div>

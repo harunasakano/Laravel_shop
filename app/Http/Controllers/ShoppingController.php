@@ -64,7 +64,7 @@ class ShoppingController extends Controller
                 }
             }
 
-                    if( isset($duplication_item_key)){
+                    if(isset($duplication_item_key)){
                         //元々カートに入っていた値に新規リクエストの個数を加算する
                         $carts[$duplication_item_key]['itemCount'] += $request->input('itemCount');
 
@@ -79,10 +79,12 @@ class ShoppingController extends Controller
 
                     }else{
                         //新規追加
+
                         $cartItem['itemCode'] = $request->input('itemCode');
                         $cartItem['itemName'] = $request->input('itemName');
                         $cartItem['itemPrice'] = $request->input('itemPrice');
                         $cartItem['itemCount'] = $request->input('itemCount');
+                        $cartItem['itemImg'] = $request->input('itemImg');
 
                         //新規アイテム保存
                         $request->session()->push("cartItem", $cartItem);
@@ -163,6 +165,8 @@ class ShoppingController extends Controller
 
             //カート画面では最新順に並び替えて表示
             $carts = array_reverse($carts,false);
+
+            
             return view('shopping.cart')->with("carts",$carts);
         }
     }
