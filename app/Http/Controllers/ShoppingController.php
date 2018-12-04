@@ -184,6 +184,9 @@ class ShoppingController extends Controller
     public function complete(Request $request)
     {
 
+        //完了画面でセッションクリア
+        $request->session()->forget('cartItem');
+
         //完了画面表示
         return view('shopping.complete');
 
