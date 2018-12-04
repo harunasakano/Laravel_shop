@@ -40,3 +40,13 @@ $(function(){
      }
 });
 });
+
+//購入確認画面で必須項目にチェック無しの場合の処理
+$(function(){
+  $('#completeform').submit(function(){
+    if($("#agree_check").prop("checked")==false){
+        alert('');
+      return false;
+    }
+  });
+});

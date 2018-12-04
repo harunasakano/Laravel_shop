@@ -2,22 +2,39 @@
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
         <link href="css/shopping.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/topValidation.js"></script>
         <title>LaraShop</title>
     </head>
     <body>
             <h1><span class="maintitle">LaraShop</span></h1>
-            <div class="container">        
-                <h3>カート一覧</h3>
-                    <div class="cartList">
-                        <table>
-                          <tr>
-                            <th>商品</th>
-                            <th>単価</th>
-                            <th>個数</th>
-                            <th>小計</th>
-                        </tr>
+            <h2>決済選択・注文内容確認</h2>
+            　<div class="container">
+             　<div class="pay-wrapper">
+             <form method="get" name="completeform" action="{{ url('/complete')}}" id="completeform">
+                <h3>決済方法の選択</h3>
+                <p>
+                <input type="radio" name="kessai" value="daibiki" checked="checked">代引き</p>
+                <p>
+                <input type="radio" name="kessai" value="ginhuri" >銀行振込
+                </p>
+               </div>
+
+                <div class="send_point">
+                  <h3>お届け先</h3>
+                  <p>ここに住所が入ります</p>
+                </div>
+
+                <div class="cartList">
+                  <h3>購入商品</h3>
+                    <table>
+                      <tr>
+                        <th>商品</th>
+                        <th>単価</th>
+                        <th>個数</th>
+                        <th>小計</th>
+                      </tr>
                             @for ($i=0; $i<count($carts); $i++)
-                            <form method="get" name="formCartEdit{{ $i }}" action="{{ url('/cart')}}">
                             <tr>
                               <td class="item_name">
                                <div class="name_item">
@@ -29,26 +46,33 @@
                               </td>
                               <td class="item_price">{{{ $carts[$i]['itemPrice'] }}}円</td>
                               @isset($itemnumber)
-                              <td class="item_count"><input type="text" name="Countitem" class="editCount" value="{{{ $itemnumber }}}">個
+                              <td class="item_count">{{{ $itemnumber }}}個
                               <input type="hidden" name="confirmItemCode" value="{{{ $carts[$i]['itemCode'] }}}">
                               @endisset
-                              <td class="item_count"><input type="text" name="Countitem" class="editCount" value="{{{ $carts[$i]['itemCount'] }}}">個
+                              <td class="item_count">{{{ $carts[$i]['itemCount'] }}}個
                               <input type="hidden" name="confirmItemCode" value="{{{ $carts[$i]['itemCode'] }}}">
-                              <button type='submit' name='itemChange' value='change' class="changeCount">再計算</button>
                               </td>
                               <td class="item_total_price">{{{ $carts[$i]['itemPrice']*$carts[$i]['itemCount'] }}}円</td>
                               <input type="hidden" name="delete_itemcode" value={{{ $carts[$i]['itemCode'] }}}>
-                              <td class="deleteButton"><button type='submit' name='deleteItem' value='delete' onclick="return confirm('カートから削除します。よろしいですか？')">削除</button></td>
                             </tr>
-                            </form>
                             @endfor
                         </table>
                     </div>
-                    
-                    <a href="{{ url('/confirm') }}" class="buyBtn">レジに進む</a>
+
+                <h4 class="check_title">注文内容確認</h4>
+                <p class="buy_check">
+                  <input type="checkbox" id="agree_check" >
+                  <label for="agree_check">この内容で購入します。</label>
+                </p>
+
+                <div class="comp_button">
+                  <button class="buyBtn" type="submit" id="buyBtn">オーダーする！</button>
+                </div>
+
                  <div class="backtop">
                     <a href={{ url('/') }}>TOPに戻る</a>
                  </div>
             </div>
+           </form>
     </body>
 </html>

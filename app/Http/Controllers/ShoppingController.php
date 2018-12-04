@@ -166,4 +166,15 @@ class ShoppingController extends Controller
             return view('shopping.cart')->with("carts",$carts);
         }
     }
+
+    public function confirm(Request $request)
+    {
+        //確認画面
+        $carts = $request->session()->get('cartItem');
+
+        //カート画面では最新順に並び替えて表示
+        $carts = array_reverse($carts,false);
+        return view('shopping.confirm')->with("carts",$carts);
+    }
+
 }
