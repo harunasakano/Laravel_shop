@@ -16,3 +16,4 @@ Route::get('/search','ShoppingController@search');
 Route::get('/item','ShoppingController@item');
 Route::get('/cart','ShoppingController@cart');
 Route::get('/confirm','ShoppingController@confirm');
+Route::get('/complete','ShoppingController@complete');

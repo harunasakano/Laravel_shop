@@ -364,6 +364,25 @@ a.active_compBtn
   text-decoration:none;
 }
 
+.compBtn
+{
+    font-size: 18px;
+    cursor: pointer;
+    margin: 15px 0 15px 0;
+    display: inline-block;
+    padding: 0.8em 1.2em;
+    text-decoration: none;
+    background: #FFA500;
+    color: #FFF;
+    border-bottom: solid 4px #E5620B;
+    border-radius: 3px;
+}
 
-
-
+.compBtn:active
+{
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}

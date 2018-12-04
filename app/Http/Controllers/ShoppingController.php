@@ -177,4 +177,12 @@ class ShoppingController extends Controller
         return view('shopping.confirm')->with("carts",$carts);
     }
 
+    public function complete(Request $request)
+    {
+
+        //完了画面表示
+        return view('shopping.complete');
+
+    }
+
 }

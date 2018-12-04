@@ -66,7 +66,7 @@
                 </p>
 
                 <div class="comp_button">
-                  <button class="buyBtn" type="submit" id="buyBtn">オーダーする！</button>
+                  <button class="compBtn" type="submit" id="compBtn">購入する</button>
                 </div>
 
                  <div class="backtop">
