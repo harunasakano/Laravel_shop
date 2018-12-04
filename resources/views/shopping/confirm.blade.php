@@ -59,10 +59,10 @@
                         </table>
                     </div>
 
-                <h4 class="check_title">注文内容確認</h4>
+                <h4 class="check_title">注文内容確認&ensp;<span class ="requiredtext">※必須</span></h4>
                 <p class="buy_check">
                   <input type="checkbox" id="agree_check" >
-                  <label for="agree_check">この内容で購入します。</label>
+                  <label for="agree_check" class="agreetext">この内容で購入します。</label>
                 </p>
 
                 <div class="comp_button">

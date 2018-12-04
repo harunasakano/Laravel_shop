@@ -45,7 +45,8 @@ $(function(){
 $(function(){
   $('#completeform').submit(function(){
     if($("#agree_check").prop("checked")==false){
-        alert('');
+        alert('注文確認がチェックされていません！');
+        $(".agreetext").after('<span class = "error-info">※この項目は必須です</span>');
       return false;
     }
   });
