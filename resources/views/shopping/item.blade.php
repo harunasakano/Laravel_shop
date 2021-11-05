@@ -45,6 +45,9 @@
                     @endforeach
             </div>
             </form>
+            <div class="backtop">
+                <a href={{ url()->previous('/') }}> << 戻る</a>
+            </div>
         </div>
     </body>
 </html>

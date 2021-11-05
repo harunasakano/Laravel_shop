@@ -18,6 +18,18 @@ h1
   font-size:72px;
 }
 
+.explain
+{
+  color: #818181;
+}
+
+.notes
+{
+    text-align: center;
+    font-size: smaller;
+    color: #c5a275;
+}
+
 .TopContainer
 {
   width: 100%;
@@ -309,24 +321,24 @@ th,td
   padding: 10px;
 }
 
-.deleteButton 
+.deleteButton
 {
  width: 15%;
  border-style: none;
 }
 
-.editCount 
+.editCount
 {
     width: 25px;
     margin: 3px;
 }
 
-.backtop 
+.backtop
 {
     margin: 20px 0 20px 0;
 }
 
-.goodsImage 
+.goodsImage
 {
     margin: 10px;
     width: 80px;
@@ -341,7 +353,7 @@ h2
   text-align: center;
 }
 
-.buy_check 
+.buy_check
 {
   font-size: 18px;
   padding: 20px;

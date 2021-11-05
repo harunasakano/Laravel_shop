@@ -6,7 +6,7 @@
     </head>
     <body>
             <h1><span class="maintitle">LaraShop</span></h1>
-            <div class="container">        
+            <div class="container">
                 <h3>カート一覧</h3>
                     <div class="cartList">
                         <table>
@@ -44,10 +44,10 @@
                             @endfor
                         </table>
                     </div>
-                    
+
                     <a href="{{ url('/confirm') }}" class="buyBtn">レジに進む</a>
                  <div class="backtop">
-                    <a href={{ url('/') }}>お買い物を続ける</a>
+                    <a href={{ url()->previous('/') }}>お買い物を続ける</a>
                  </div>
             </div>
     </body>

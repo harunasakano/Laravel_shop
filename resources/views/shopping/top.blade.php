@@ -9,6 +9,7 @@
     <body>
         <div class="TopContainer">
             <h1><span class="maintitle">LaraShop</span></h1>
+            <dt class="explain">疑似お買い物サイトです。</dt>
             <form name="queryform" action="{{ url('/search') }}" method="GET" id="queryform">
             <p class="formTitle">カテゴリ</p>
             <div class="categoryBox cp_sl01">
