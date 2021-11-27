@@ -12,18 +12,18 @@
 
 /**
  * @brief アプリケーションID
- * 
+ *
  * Yahoo! JAPANが提供するWeb APIを利用するアプリケーションには、アプリケーションIDが必要です。
  * Yahoo!デベロッパーネットワークで取得したアプリケーションIDを設定してください。
  * アプリケーションIDの取得については
  * http://e.developer.yahoo.co.jp/webservices/register_application
  * をご覧ください。
- * 
+ *
  * @var string
  */
- 
+
 return [
- 
+
 'appid' => "dj00aiZpPTF1dldCWFZYWkd0RCZzPWNvbnN1bWVyc2VjcmV0Jng9NmY-",//取得したアプリケーションIDを設定
 
 /**
@@ -64,15 +64,13 @@ return [
  * キーに検索用パラメータ、値にソート方法が入っています。
  * @access private
  * @var array
- * 
+ *
  */
 
 'sortOrder' => [
                    "-score" => "おすすめ順",
                    "+price" => "商品価格が安い順",
                    "-price" => "商品価格が高い順",
-                   "+name" => "ストア名昇順",
-                   "-name" => "ストア名降順",
                    "-sold" => "売れ筋順"
             ],
 ];
